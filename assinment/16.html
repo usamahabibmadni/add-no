@@ -1,0 +1,85 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <form action="#" onsubmit="oddnumber()"> 
+    <input type="number" name="number" id="numbers" placeholder="enter number">
+    <button onclick="">check</button>
+    <p id="result"></p>
+</form> 
+<script>
+    function oddnumber(){
+    var num = document.getElementById("numbers").value
+    document.getElementById("result").innerHTML=num
+    if(num % 2=== 0 === true){
+        document.getElementById("result").innerHTML= "true"
+    }
+    else{
+        document.getElementById("result").innerHTML ="false"
+    }
+
+    }
+
+
+
+
+</script>
+
+</body>
+</html> -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+ 
+    <form action="#" >
+        <h1>Enter add or even numbers</h1>
+    <input type="number" id="addnumber" placeholder="Enter Your Number">
+    <button onclick="return even()">cheack</button>
+   </form>
+    
+    <h1 id="check"></h1>
+    
+    
+    <h1 id="num"></h1>
+    
+    
+    
+    
+     <script>
+    let arr1=[];
+    // let arr2=[];
+    
+    
+    function even(){
+        var addnum = document.getElementById("addnumber").value;
+     arr1.push(addnum)
+
+     document.getElementById("addnumber").value="";
+      for( i = 0 ; i <arr1.length ;i ++){
+          if(arr1 [i] % 2===0 === true){
+    document.getElementById("num").innerHTML="true"
+          }else if(arr1 [i] % 2===0 === false){
+    document.getElementById("num").innerHTML="false"
+    
+          }
+    
+        
+          
+      }
+    }
+   
+</script>
+
+</body>
+</html>
